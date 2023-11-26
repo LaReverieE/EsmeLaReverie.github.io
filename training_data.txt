@@ -1,0 +1,51 @@
+Base: Accuracy
+---
+Textbooks
+Manuals
+Dictionaries
+Thesaurus
+Atlas
+Encyclopedias
+Almanacs
+Handbooks
+Online databases
+Research papers and journals
+Archives and primary sources
+Educational websites
+CookBooks
+
+Fine Tune: Precision
+---
+Adventure Stories
+Ballads
+Creation Myths
+Cultural Hero Stories
+Epics
+Fables
+Fairy Tales
+Ghost Stories
+Historical Narratives
+Legends
+Literary classics
+1. Epic Novels:
+2. Psychological Novels:
+3. Historical Fiction:
+4. Social Commentary:
+5. Satire:
+6. Romantic Fiction:
+7. Existential Literature:
+8. Dystopian Fiction:
+9. Philosophical Fiction:
+10. Short Stories:
+11. Autobiographical Fiction:
+12. Political Allegory:
+Myths
+Nursery Rhymes
+Origin Stories
+Parables
+Proverbs
+Religious Text
+Stories
+Tall Tales
+Trickster Tales
+Folk Songs/ Tales
