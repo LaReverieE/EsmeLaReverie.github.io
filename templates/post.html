@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body, html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url('/Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/static/images/main_1.avif');
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+            <a href="file:///Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/templates/index.html"
+               class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="file:///Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/templates/profile.html#about"
+               class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="file:///Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/templates/profile.html#testimonials"
+               class="w3-button w3-block w3-black">TESTIMONIALS</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="file:///Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/templates/profile.html#contact"
+               class="w3-button w3-block w3-black">CONTACT</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">The Rêverie<br>Reads</span>
+    </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" id="storyTitle"></span></h5>
+            <p id="storyContent"></p>
+        </div>
+    </div>
+
+    <!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>&copy; 2023 The Rêverie Reads. All rights reserved.</p>
+</footer>
+
+<script>
+  // Fetch JSON data using a relative path
+  fetch('data/test.json')
+     .then(response => {
+        if (!response.ok) {
+           throw new Error('Network response was not ok');
+        }
+        return response.json();
+     })
+     .then(data => {
+        const jsonData = {
+           "title": data.title,
+           "content": data.content,
+           "author": data.author,
+           "render_count": data.render_count
+        };
+
+        // Populate HTML with data from JSON
+        document.getElementById("storyTitle").innerText = jsonData.title;
+        document.getElementById("storyContent").innerText = jsonData.content;
+     })
+     .catch(error => console.error('Error fetching or parsing JSON:', error));
+</script>
+
+</body>
+</html>

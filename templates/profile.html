@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/static/images/main_1.avif');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My Skills</a>
+    <a href="#testimonials" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Testimonials</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    <a href="file:///Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/templates/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+</div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Esmé de La Rêverie</b></h1>
+    <p>Versatile Author, Captivating Storyteller.</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Welcome to the enchanting realm of Esmé de La Rêverie, where words dance on the pages and tales come to life. As a Versatile Author and Captivating Storyteller, I invite you to join me on a journey through the boundless landscapes of imagination and emotion.</p>
+    <p>In this sanctuary of stories, I craft narratives that traverse genres, embracing the diversity of human experiences. From the whimsical realms of fantasy to the poignant depths of realism, each tale is a tapestry woven with threads of creativity and passion. Here, storytelling is not just an art; it's a way of breathing life into the extraordinary and the everyday.</p>
+    <p>My commitment to honing my craft is reflected in the Daily Stories I share with you. Each piece is a testament to my perpetual quest for improvement, a commitment to mastery that we embark upon together. As you delve into these stories, I hope they not only entertain but also inspire and challenge, offering a tapestry of emotions and perspectives.</p>
+    <p>This blog is a haven for fellow lovers of words and tales. No advertisements disrupt the immersive experience; instead, the sustenance for this literary endeavor comes from the generosity of readers like you. If you find joy in these stories, I encourage you to share them with friends, spreading the magic of storytelling far and wide.</p>
+    <p>Your support, in any form, allows Esmé de La Rêverie to continue weaving tales that captivate hearts and ignite imaginations. Whether through sharing your favorite stories, leaving thoughtful comments, or considering a contribution, you become an integral part of this literary adventure.</p>
+    <p>Thank you for being a part of this journey. Let's explore the realms of imagination together, one Daily Story at a time.</p>  
+    <h3 id="skills" class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Writing Proficiency</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Editing and Revision</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Research</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <!-- Testimonials -->
+    <h3 id="testimonials" class="w3-padding-24">My Reputation</h3>
+    <p><span class="w3-large w3-text-black w3-margin-right">Sarah M.</span></p>
+    <p>This storytelling is pure magic! Each tale is a journey into worlds I never knew I needed. I find myself eagerly anticipating the next Daily Story, grateful for the escape and inspiration they provide.</p><br>
+   
+    <p><span class="w3-large w3-text-black w3-margin-right">Jonathan L.</span></p>
+    <p>I'm continually inspired by Esmé's creativity. Her ability to weave intricate narratives is unmatched. The Daily Stories have become a cherished part of my routine, a delightful escape into my imagination.</p><br>
+    
+    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca F.</span></p>
+    <p>I stumbled upon Esmé's blog and was instantly captivated. The stories are not just well-written; they resonate on a personal level. I've recommended this to my book club, and we're all hooked. The Rêverie Reads is a literary gem worth discovering.</p><br>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>United States of America</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <img src="/Users/f006dg0/Desktop/EsmeLaReverie/EsmeLaReverie.github.io/static/images/profile_1.avif" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required id="Name"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required id="Email"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required id="Subject"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required id="Message"></p>
+    <p>
+        <button class="w3-button w3-light-grey w3-padding-large" onclick="sendEmail()">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+    </p>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p>&copy; 2023 The Rêverie Reads. All rights reserved.</p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<!-- Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+
+<script>
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function sanitizeInput(input) {
+    return DOMPurify.sanitize(input);
+}
+
+function validateEmail(email) {
+    // Implement more robust email validation logic if needed
+    return email.includes('@');
+}
+
+function validateForm() {
+    var name = document.getElementById('Name').value;
+    var email = document.getElementById('Email').value;
+
+    if (!name || !email || !validateEmail(email)) {
+        alert('Please fill in all required fields and provide a valid email address.');
+        return false;
+    }
+
+    return true;
+}
+
+function sendEmail() {
+    if (!validateForm()) {
+        return;
+    }
+
+    var name = sanitizeInput(document.getElementById('Name').value);
+    var email = sanitizeInput(document.getElementById('Email').value);
+    var subject = sanitizeInput(document.getElementById('Subject').value);
+    var message = sanitizeInput(document.getElementById('Message').value);
+
+    // Client-side logic to send the email
+        var mailtoLink = 'mailto:esme.lareverie@gmail.com'
+            + '?subject=' + encodeURIComponent(subject)
+            + '&body=' + encodeURIComponent('Hello, my name is ' + name + '. ' + message + '\n\nFeel free to reach back out to me at ' + email);
+
+        window.location.href = mailtoLink;
+}
+</script>
+
+</body>
+</html>
